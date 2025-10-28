@@ -2,11 +2,14 @@
 import React from 'react';
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
+import { BsArrowRight } from 'react-icons/bs';
+import ParticlesHero from './ParticleBackground';
 
 
 const Hero = () => {
   return (
 <div className="relative h-screen flex items-center justify-center text-white overflow-hidden flex-col">
+  <ParticlesHero />
 <div className="relative z-10 flex flex-col items-center">
 <Image 
 src="/images/Kumar_Aditya1.jpg"
@@ -26,8 +29,9 @@ className="rounded-full  border-5 border-[#0c0c48aa]"
     <Typewriter options={{
 strings:[
 
-  ' Full-Stack Developer',
-  ' Software Developer'
+  ' Frontend Developer',
+  ' Backend Developer',
+  ' Software Engineer'
 ],
 autoStart:true,
 loop:true,
@@ -37,7 +41,11 @@ wrapperClassName:"pl-2",
     }} />
   </span>
 </h2>
-</div>
+<button className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium">
+  <span>See my work</span>
+  <BsArrowRight className="w-s h-5 ml-2 inline-block" />
+</button>
+</div>  
 </div>
   );
 };
