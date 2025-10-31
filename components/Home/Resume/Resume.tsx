@@ -16,7 +16,6 @@ const Resume = () => {
                 <div className="mt-10">
                     <ResumeCard Icon={FaCodepen} role="Full-Stack Developer" />
                     <ResumeCard Icon={FaReact} role="Software Developer" />
-                    <ResumeCard Icon={BsDatabase} role="Backend Developer" />
                 </div>
             </div>
             {/* {EDUCATION PART} */}
@@ -28,17 +27,16 @@ const Resume = () => {
                      Icon={BiBadge}
                      role="Jain University" 
                      date="Aug 2022 - Jul 2026"
+                     description="Pursuing my B.Tech in Computer Science and Engineering"
+                     
                      />
                     <ResumeCard
                      Icon={FaReact}
                      role="Indian Public School" 
                      date="March 2020 - Jul 2022"
                      />
-                     <ResumeCard
-                     Icon={BiBadge}
-                     role="Bright Career School" 
-                     date="March 2006 - Jul 2020"
-                     /> 
+                     
+                    
                 
                 </div>
                 </div>
