@@ -1,4 +1,4 @@
-"use client";
+
 import React from 'react'
 import ResumeCard from './ResumeCard'
 import { FaCodepen, FaReact } from 'react-icons/fa'
@@ -18,8 +18,9 @@ const Resume = () => {
                 data-aos="zoom-in"
                 data-aos-anchor-placement="top-center"
                 >
-                    <ResumeCard Icon={FaCodepen} role="Full-Stack Developer" />
-                    <ResumeCard Icon={FaReact} role="Software Developer" />
+                    
+                    {/* <ResumeCard Icon={FaCodepen} role="Full-Stack Developer" /> */}
+                    <ResumeCard Icon={FaReact} role="Frontend Developer" date="Jun 2024-July2024" description="Implemented a fully responsive frontend using modern frameworks, ensuring smooth user experience across all screen sizes." />
                 </div>
             </div>
             {/* {EDUCATION PART} */}
@@ -36,12 +37,15 @@ const Resume = () => {
                      role="Jain University" 
                      date="Aug 2022 - Jul 2026"
                      description="Pursuing my B.Tech in Computer Science and Engineering"
+                     extra="CGPA: 8.5"
                      
                      />
                     <ResumeCard
                      Icon={FaReact}
                      role="Indian Public School" 
                      date="March 2020 - Jul 2022"
+                     description="Achieved 82% in Higher Secondary Education from Indian Public School, specializing in Science."
+                    
                      />
                      
                     

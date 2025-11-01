@@ -23,12 +23,34 @@ const Home = () => {
       initAOS()
    },[]);
  return <div className="overflow-visible h-auto">
+    <section id="hero">
+
     <Hero />
+    </section>
+    <section id="services">
+
     <Services />
+    </section>
+    
+    <section id="resume">
+
     <Resume />
+    </section>
+    
+    <section id="projects">
+
     <Projects />
+    </section>  
+    
+    <section id="skills">
+
     <Skills />
+    </section>
+    
+    <section id="contact">
+
     <Contact />
+    </section>  
 
  </div>;
   

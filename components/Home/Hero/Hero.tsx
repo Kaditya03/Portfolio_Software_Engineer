@@ -47,7 +47,14 @@ wrapperClassName:"pl-2",
 </h2>
 <button 
 data-aos="fade-up" data-aos-delay="600"
-className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium">
+className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium"
+  onClick={()=>{
+    const section =document.getElementById("projects");
+    if(section){
+      section.scrollIntoView({ behavior:"smooth"});
+    }
+  }}
+  >
   <span>See my work</span>
   <BsArrowRight className="w-s h-5 ml-2 inline-block" />
 </button>
