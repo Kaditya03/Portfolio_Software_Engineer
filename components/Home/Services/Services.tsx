@@ -10,7 +10,7 @@ const Services = () => {
       
     </h1>
     <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mt-20 items-center">
-        <div>
+        <div data-aos="fade-right" data-aos-anchor-placement="top-center">
             <ServiceCard 
             icon="/images/s1.png"
             name="UI and UX"
@@ -19,7 +19,7 @@ const Services = () => {
             
 
         </div>
-        <div>
+        <div data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-dealy="100">
             <ServiceCard 
             icon="/images/s2.png"
             name="Web and mobile app"
@@ -28,7 +28,7 @@ const Services = () => {
             
 
         </div>
-        <div>
+        <div data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-dealy="200">
             <ServiceCard 
             icon="/images/s3.png"
             name="Design and creative"
@@ -37,7 +37,7 @@ const Services = () => {
             
 
         </div>
-        <div>
+        <div data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-dealy="300">
             <ServiceCard 
             icon="/images/s4.png"
             name="UDevelopment"
