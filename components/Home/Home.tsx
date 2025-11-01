@@ -7,53 +7,55 @@ import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
 import Contact from "./Contact/Contact";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 
 const Home = () => {
-   useEffect(()=>{
-      const initAOS =async ()=>{
-         await import ("aos");
+   useEffect(() => {
+      const initAOS = async () => {
+         await import("aos");
          AOS.init({
-            duration:1000,
-            easing:"ease",
-            once:true,
-            anchorPlacement:"top-bottom",
+            duration: 1000,
+            easing: "ease",
+            once: true,
+            anchorPlacement: "top-bottom",
+
          });
       };
       initAOS()
-   },[]);
- return <div className="overflow-visible h-auto">
-    <section id="hero">
 
-    <Hero />
-    </section>
-    <section id="services">
+   }, []);
+   return <div className="overflow-visible h-auto">
+      <section id="hero">
 
-    <Services />
-    </section>
-    
-    <section id="resume">
+         <Hero />
+      </section>
+      <section id="services">
 
-    <Resume />
-    </section>
-    
-    <section id="projects">
+         <Services />
+      </section>
 
-    <Projects />
-    </section>  
-    
-    <section id="skills">
+      <section id="resume">
 
-    <Skills />
-    </section>
-    
-    <section id="contact">
+         <Resume />
+      </section>
 
-    <Contact />
-    </section>  
+      <section id="projects">
 
- </div>;
-  
+         <Projects />
+      </section>
+
+      <section id="skills">
+
+         <Skills />
+      </section>
+
+      <section id="contact">
+
+         <Contact />
+      </section>
+
+   </div>;
+
 }
 
 export default Home
